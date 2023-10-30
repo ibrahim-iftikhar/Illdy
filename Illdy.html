@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            overflow-x: hidden;
+        }
+    
+    #main{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./website/front-page-header.jpg);
+    
+    }
+    
+    #logo{
+    margin-left: 100px;
+    margin-top: 20px;
+    
+    
+    }
+    #navbar{
+        list-style: none;
+    margin-left: 450px;
+    margin-top: -30px;
+    }
+    #navlist{
+        display: inline;
+        margin-left: 40px;
+    }
+    #navlist a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    #banner{
+        width: 830px;
+        height: 200px;
+        /* border: 1px solid; */
+        margin-left: 250px;
+        margin-top: 250px;
+    }
+    #banner-heading{
+        font-size: 78px;
+        color: white;
+    }
+    #para{
+        color: white;
+        font-size: 17px;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    #pre{
+        margin-left: 170px;
+        line-height: 40px;
+    }
+    #btn{
+        width: 150px;
+        height: 50px;
+        border: 2px solid white;
+        background: rgba(255, 255, 255, 0.493);
+        margin-left: 210px;
+        margin-top: 30px;
+    }
+    #btn:hover{
+        background: transparent;
+    }
+    #btn1{
+        width: 150px;
+        height: 55px;
+        background: yellow;
+        border: none;
+        border-radius: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    #btn1:hover{
+        color: white;
+        background: purple;
+    }
+    
+    #about{
+        width: 100%;
+        height: 400px;
+    }
+    
+    #para1{
+        margin-left: 200px;
+        margin-top: 30px;
+        line-height: 20px;
+    }
+    #parent_skill{
+        height: 20vh;
+        width: 100%;
+        /* border: 1px solid; */
+        margin-top: 10vh;
+    }
+    #skill1{
+        width:400px ;
+        height: 100px ;
+        /* border: 1px solid; */
+        margin-left: 20px ;
+        display: inline-block;
+    }
+    #percentage{
+        width: 13%;
+        height:25% ;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        margin-left: 60%;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+    #line{
+        width: 90%;
+        height: 2% ;
+        background-color: grey;
+        margin-top: 3%;
+        margin-left: 5%;
+        
+    }
+    #inline{
+        width: 68%;
+        height:3px;
+        background-color: orange;
+    }
+    #circle{
+        width: 10px;
+        height: 10px;
+        background-color: orange;
+        border-radius: 50%;
+        margin-left: 240px;
+        margin-top: -5px;
+    }
+    #skill2{
+        width:400px ;
+        height: 100px ;
+        /* border: 1px solid; */
+        margin-left: 20px ;
+        display: inline-block;
+    }
+    #percentage2{
+        width: 13%;
+        height:25% ;
+        background-color: gold;
+        color: white;
+        text-align: center;
+        margin-left: 82%;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+    #line2{
+        width: 90%;
+        height: 2% ;
+        background-color: grey;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+    #inline2{
+        width: 90%;
+        height:3px;
+        background-color: gold;
+    }
+    #circle2{
+        width: 10px;
+        height: 10px;
+        background-color: gold;
+        border-radius: 50%;
+        margin-left: 320px;
+        margin-top: -5px;
+    }
+    #skill3{
+        width:30% ;
+        height: 100px ;
+        /* border: 1px solid; */
+        margin-left: 20px ;
+        display: inline-block;
+    }
+    #percentage3{
+        width: 13%;
+        height:25% ;
+        background-color: purple;
+        color: white;
+        text-align: center;
+        margin-left: 84%;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+    #line3{
+        width: 90%;
+        height: 2% ;
+        background-color: grey;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+    #inline3{
+        width: 93%;
+        height:3px;
+        background-color: purple
+    }
+    #circle3{
+        width: 10px;
+        height: 10px;
+        background-color: purple;
+        border-radius: 50%;
+        margin-left: 315px;
+        margin-top: -5px;
+    }
+    #projects{
+        width: 100%;
+        height: 200px;
+        background-color: wheat
+    }
+    #project-heading{
+        text-align: center;
+        position: relative;
+        top: 80px;
+        color: gray;
+        font-size: 40px;
+        }
+        #projects-para{
+            text-align: center;
+            margin-top: 100px;
+            color: lightslategray;
+            font-size: 17px;
+        }
+        #project-images{
+            width: 100%;
+            /* height: ; */
+        }
+        #project-images img{
+        width: 25%;
+        display: block;
+        float: left;
+        }
+        #testimonials{
+            width: 100%;
+            height: 950px;
+            background-color:rgba(102, 51, 153, 0.883);
+            ;
+    
+        }
+        #testi-heading{
+        text-align: center;
+        position: relative;
+        top: 50px;
+        color: white;
+        font-size: 40px;
+        }
+
+        #testi-images{
+            /* width: 50px; */
+            /* height: 50px; */
+            border-radius: 50%;
+            margin-left: 570px;
+            margin-top: 100px;
+        }
+        #testi-para{
+            text-align: center;
+            margin-top: 100px;
+            font-size: 110%;
+            color: white;
+            line-height: 30px;
+        }
+        #services{
+            width: 100%;
+            height: 450px;
+            background-color: white;
+            /* border: solid 1px black; */
+
+            
+        }
+        #servi-heading{
+            text-align: center;
+            color: grey;
+            margin-top: 80px;
+            font-size: 45px;
+            
+        }
+        #servi-para{
+            text-align: center;
+            margin-top: 10px;
+            color: lightslategray;
+        }
+        #web-design{
+            width: 400px;
+            height: 250px;
+            /* border:  1px solid; */
+            margin-top: 70px;
+            display: inline-block;
+            
+        }
+        #web-para{
+            text-align: center;
+            margin-top: 20px;
+            color: lightslategray;
+            line-height: 30px;
+        }
+        #web-development{
+            width: 400px;
+            height: 250px;
+            /* border:  1px solid; */
+            /* margin-top: 80px;   */
+            display: inline-block;
+            position: relative;
+            top: -7px;
+        }
+        #web-develp-para{
+            text-align: center;
+            margin-top: 20px;
+            color: lightslategray;
+            line-height: 30px;
+        }
+        #seo-analisys{
+            width: 400px;
+            height: 250px;
+            /* border:  1px solid; */
+            margin-top: 70px;  
+            display: inline-block;
+        }
+        #seo-analisys-para{
+            text-align: center;
+            margin-top: 20px;
+            color: lightslategray;
+            line-height: 30px;
+        }
+        #latest-news{
+            width: 100%;
+            height: 1100px;
+            background: rgb(11, 47, 58);
+            padding:1px;
+        }
+        /* #news-heading{
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            position: relative;
+            top: 80px;
+            font-size: 42px;
+        } */
+        #btn2{
+            width: 150px;
+        height: 48px;
+        background: gold;
+        border: none;
+        border-radius: 5px;
+        margin-left: 558px;
+        margin-top: 60px;
+        cursor: pointer;
+        transition: .5s ease;
+        font-weight: bold;
+        color: white;
+        }
+        #btn2:hover{
+        background: indigo;
+        }
+        #main-div{
+            
+        width: 93%;
+        height: 70%;
+        /* border: 1px solid black; */
+        margin-top: 30px;
+        margin-left: 45px;
+        }
+        #div1{
+        
+          width: 360px;
+            height: 550px;
+            /* border: 1px solid black; */
+            background-color: white;
+            float: left;
+         }
+        #div2{
+            width: 360px;
+            height: 615px;
+            /* border: 1px solid black; */
+            background: white;
+            position: relative;
+            /* top: -97px; */
+            float: left;
+            margin-left: 40px;
+        }
+        #div3{
+        
+          width: 360px;
+          height: 550px;
+          /* border: 1px solid black; */
+          background-color: white;
+          float: left;
+          margin-left:40px ;
+       }
+       #yellow-div{
+        width: 101%;
+        height: 25vh;
+        margin-left: -10px;
+        /* background: yellow; */
+        background-image: url(./website/front-page-counter.jpg);
+         background-size: cover;
+        background-attachment: fixed; 
+       }
+       #team{
+           width: 100%;
+           height: 500px;
+           /* background-color: lightyellow; */
+           background: rgba(223, 223, 223, 0.719);
+           padding: 1px;
+       }
+       #tags{
+           width: 100%;
+           height: 55vh;
+           /* border: 1px solid black; */
+       }
+       #tag1{
+           width: 400px;
+           height: 250px;
+           /* border: 1px solid black; */
+           float: left;
+           margin-left: 40px;
+           margin-top: 45px;
+       }
+       #tag2{
+        width: 400px;
+           height: 250px;
+           /* border: 1px solid black; */
+           float: left;
+           margin-top: 45px;
+
+       }
+       #tag3{
+        width: 400px;
+           height: 250px;
+           /* border: 1px solid black; */
+           float: left;
+           margin-top: 45px;
+       }
+       #tag1-image{
+           width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           margin-top: 35px;
+           margin-left: 15px;
+       }
+       #tag2-image{
+        width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           margin-top: 35px;
+           margin-left: 15px;
+         }
+         #tag3-image{
+            width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           margin-top: 35px;
+           margin-left: 15px;
+        }
+        #contact{
+            width: 100%;
+            height: 800px;
+            border: 1px solid black;
+        }
+        #address{
+            width: 400px;
+            height: 200px;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+            margin-left: 40px;
+            float: left;
+        }
+        #costomer-support{
+            width: 400px;
+            height: 200px;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+            margin-left: 40px;
+            float: left;
+        }
+        #your-name{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            /* margin-top: 200px; */
+            margin-left: 20px;
+            /* float: left; */
+            display: inline-block;
+        }
+        #your-email{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            /* margin-top: 200px; */
+            margin-left: 20px;
+            float: left;
+            /* display: inline-block; */
+        }
+        #subject123{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            /* margin-top: 200px; */
+            margin-left: 20px;
+            /* float: left; */
+            /* display: inline-block */
+        }
+       
+
+         
+       
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <div id="logo"><img src="./website/cropped-footer-logo-1.png" alt=""></div>
+    
+        <ul id="navbar">
+            <li id="navlist"><a href="">About</a></li>
+            <li id="navlist"><a href="">Portfolio</a></li>
+            <li id="navlist"><a href="">Testimonials</a></li>
+            <li id="navlist"><a href="">services</a></li>
+            <li id="navlist"><a href="">blog</a></li>
+            <li id="navlist"><a href="">Our team</a></li>
+            <li id="navlist"><a href="">contact us</a></li>
+        </ul>
+    
+    
+        <div id="banner">
+            <h1 id="banner-heading">Clean<span style="color: yellow;">.</span>Slick<span style="color: yellow;">.</span>Pixel Perfect</h1>
+            <p id="para">lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants a 
+                <span id="pre">new website for his business. Try it now! </span></p>
+       
+                <button id="btn">Learn More</button>
+                <button id="btn1">Download</button>
+            </div>
+    
+    </div>
+    
+    <div id="about">
+        <h1 style="margin-left: 580px; margin-top: 40px;color: gray;">About</h1>
+        <p id="para1">It is an amazng one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your
+            <br>business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add
+        <br> <span style="margin-left: 200px;">as many images as you want to the main header area and turn them into slider.</span>
+        
+        </p>
+        
+
+    <div id="parent_skill">
+        <div id="skill1">
+            <div id="percentage">60%</div>
+            <div id="line">
+                <div id="inline"></div>
+                <div id="circle"></div>
+                <h3 style="margin-left: 5px;margin-top: 15px; color: orange;">Typography</h3>
+            </div>
+        </div>
+
+        <div id="skill2">
+            <div id="percentage2">82%</div>
+            <div id="line2">
+                <div id="inline2"></div>
+                <div id="circle2"></div>
+                <h3 style="margin-left: 5px;margin-top: 15px; color: gold;">Design</h3>
+            </div>
+        </div>
+        <div id="skill3">
+            <div id="percentage3">86%</div>
+            <div id="line3">
+                <div id="inline3"></div>
+                <div id="circle3"></div>
+                <h3 style="margin-left: 5px;margin-top: 15px; color:purple">Development</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="projects">
+    <h1 id="project-heading">Projects</h1>
+    <p id="projects-para">You'll love our work. Check it out!   </p>
+</div>
+
+<div id="project-images"> 
+<img src="./website/front-page-project-1.jpg" alt=""> 
+<img src="./website/front-page-project-2.jpg">
+<img src="./website/front-page-project-3.jpg">
+<img src="./website/front-page-project-4.jpg" >
+
+</div>
+
+<div id="testimonials">
+    <h1 id="testi-heading">Testimonials</h1>
+     <img id="testi-images" src="./website/front-page-team-3.jpg"> 
+
+    <p id="testi-para">"Awesome theme with great design and awesome support.If you dont know how to code your own Wordpress theme,but you still
+        <br>want a good looking website for your bussiness,illdy might be exactly what you need.It is a slick theme with alot of features to
+        <br>choose from"
+    </p>
+   
+    <h2 style="text-align: center; margin-top: 80px;color: white;">Mike Muller</h2>
+</div>
+
+<div id="services">
+<h1 id="servi-heading">Services</h1>
+<p id="servi-para">In order to help you grow your business, our carefully selected experts can advise you in in the following areas:
+</p>
+<div id="web-design">
+    <img style=" width: 40px;
+    height: 40px;
+    margin-left: 180px;" srcset="https://tse2.mm.bing.net/th?id=OIP.WEZi6KysiyCdUVNomJ-zmwAAAA&pid=Api&P=0&w=173&h=173">
+    <h2 style=" text-align: center;margin-top: 20px;color: orange;font-size: 30px;">Web Design</h2>
+
+<p id="web-para">Consectetur adipiscing elit. Praesent molestie urna 
+    <br> hendrerit erat tincidunt tempus. Aliquam a leo risus.
+    <br> Fusce a metus non augue dapibus porttitor at in
+    <br> mauris. Pellentesque commodo...</p>
+    
+</div>
+
+<div id="web-development">
+    <img style=" width: 40px;
+    height: 40px;
+    margin-left: 180px;" src="./website/hh.png">
+    <h2 style=" text-align: center;margin-top: 20px;color: gold;">WEB DEVELOPMENT</h2>
+    <p id="web-develp-para">Consectetur adipiscing elit. Praesent molestie urna 
+        <br> hendrerit erat tincidunt tempus. Aliquam a leo risus.
+        <br> Fusce a metus non augue dapibus porttitor at in
+        <br> mauris. Pellentesque commodo...</p>
+        
+    </div>
+
+    <div id="seo-analisys">
+<img style="width: 40px;
+height: 40px;
+margin-left: 180px;" src="./website/bbbb.png">
+<h2 style="text-align: center;margin-top: 20px;font-size: 30px;color: indigo;">Seo Analisys</h2>
+<p id="seo-analisys-para">Consectetur adipiscing elit. Praesent molestie urna 
+    <br> hendrerit erat tincidunt tempus. Aliquam a leo risus.
+    <br> Fusce a metus non augue dapibus porttitor at in
+    <br> mauris. Pellentesque commodo...</p>
+ 
+</div>
+</div>
+
+<div id="latest-news">
+    <h1 style="margin-top: 100px; text-align: center; color: white; font-size: 40px;"  >Latest News</h1> 
+
+    <p style="text-align: center;margin-top: 15px; color:grey ;font-size: 18px;">If you are interested in the latest articles in the industry, take a sneak peek at our blog. You have nothing to loose!
+    </p>
+    <button id="btn2">See Blog</button>
+
+<div id="main-div">
+<div id="div1">
+    <img style="width: 100.5%;" src="./website/div1.jpg">
+    <h1 style="text-align: left; font-size: 20px;margin-top: 35px; margin-left: 35px; color: rgba(92, 91, 91, 0.959);">WE HAVE MADE illdy <br> THEME SEO FRIENDLY</h1>    
+<p style=" text-align: left;margin-top: 50px;margin-left: 35px;color:lightslategrey ;line-height: 25px;font-size: 18px;" > Illdy One Page WordPress theme is fully<br> SEO friendly and is ready to help you to<br> achieve the highest rankings…</p>
+</div>
+<div id="div2">
+    <img style="width: 100.5%;" src="./website/div2.jpg">
+    <h1 style="text-align: left; font-size: 25px;margin-top: 25px; margin-left: 35px; color: rgba(92, 91, 91, 0.959);">Stunning one page <br> wordpress Theme For <br> Masses</h1>
+<p style=" text-align: left;margin-top: 16px;margin-left: 35px;color:lightslategrey ; line-height: 25px;font-size: 18px;">This theme is not just free, it is free for <br> private and commercial use since it is<br> licensed under GPL…</p>
+</div>
+<div id="div3"> 
+    <img style="width: 100.5%" src="./website/div3.jpg">
+    <h1 style=" text-align: left; font-size: 25px;margin-top: 35px; margin-left: 35px; color: rgba(92, 91, 91, 0.959);">Hello World!</h1>
+
+    <p style="text-align: left;margin-top: 60px;margin-left: 35px;color:lightslategrey ;line-height: 25px;font-size: 18px;">Welcome to colorlib.com. This is our first <br> post around Illdy WordPress theme. Now <br> show that you can make out of it.…</p>
+
+</div>
+</div>
+<!-- <div style="clear: both;"></div> -->
+<div id="yellow-div">
+    <h1 style="  position: relative;top: 70px; font-size: 30px; color: white;"><span style="margin-left: 160px;">Projects</span> <span style="margin-left: 155px;" >|</span><span style="margin-left: 155px;">Clients</span><span style="margin-left: 155px;">|</span><span style="margin-left: 155px;">Coffees</span></h1>
+    
+</div>
+<div id="team">
+    <h1 style="text-align: center;margin-top: 80px ;font-size: 43px;color: rgb(92, 92, 92);">Team</h1>
+<p style="text-align: center; margin-top: 10px;font-size: 18px;color: rgb(185, 185, 185);">Meet the people that are going to take your business to the next level.</p>
+
+<div id="tags">
+    <div id="tag1">
+        <img id="tag1-image" src="./website/front-page-team-1.jpg">
+        <h1 style="margin-left: 150px;margin-top: -120px; font-size: 28px; color: rgb(92, 92, 92);">Mark Lawrance</h1>
+        <h2 style="margin-left: 150px;margin-top: 10px; font-size: 20px;color: orange;">Web Designer</h2>
+    <p style="margin-left: 150px;margin-top: 20px;color: rgb(175, 174, 174);">Creative, detail-oriented,<br> always focused.</p>
+   <img style="margin-left: 150px;margin-top: 10px;" src="./website/12344.png">
+</div>
+    <div id="tag2">
+        <img id="tag2-image" src="./website/front-page-team-2.jpg">
+        <h1  style="margin-left: 150px;margin-top: -120px; font-size: 28px; color: rgb(92, 92, 92);">Jane Stenton</h1>
+        <h2 style="margin-left: 150px;margin-top: 10px; font-size: 20px;color: gold;">SEO Specialist</h2>
+    <p  style="margin-left: 150px;margin-top: 20px;color: rgb(175, 174, 174);">Curious, tech-geeck and gets <br> serious when it comes to <br> work.</p>
+    <img style="margin-left: 150px;margin-top: 10px;" src="./website/2345.png">   
+</div>
+    <div id="tag3">
+        <img id="tag3-image" src="./website/front-page-team-3.jpg">
+        <h1  style="margin-left: 150px;margin-top: -120px; font-size: 28px; color: rgb(92, 92, 92);">John Smith</h1>
+        <h2 style="margin-left: 150px;margin-top: 10px; font-size: 20px;color: rgb(92, 92, 92);">Developer</h2>
+    <p style="margin-left: 150px;margin-top: 20px;color: rgb(175, 174, 174);">Enthusiastic, passionate with <br> great sense of humor.</p>
+    <img style="margin-left: 150px;margin-top: 10px;" src="./website/3456.png">
+
+  </div>
+</div>
+</div>
+
+<div id="contact">
+    <h1 style="text-align: center; margin-top: 50px; font-size: 38px; color:  rgb(92, 92, 92) ;">Contact Us</h1>
+<div id="address">
+    <h1 style="margin-top: 40px;"> <span style="margin-left: 10px; font-size: 18px; color: gold;">Address</span> <span style="margin-left: 10px ;color: lightgray; ">|</span><Span style="margin-left: 15px; font-size: 15px; margin-top: 40px; color: grey ;">Street 221B Baker Street,London,UK </span></h1>
+  </div>
+  <div id="costomer-support">
+      <h1  style="margin-top: 40px;"><span style="margin-left: 10px; font-size: 15px; color: gold;">Costomer Support</span> <span style="margin-left: 10px ;color: lightgray;">|</span><Span style="margin-left: 15px; font-size: 15px; margin-top: 40px; color: grey ;">E-mail: contact@site.com
+        Phone: (555) 555-5555</span></h1>
+    </div>
+
+<div id="your-name"></div>
+<div id="your-email"></div>
+<div id="subject123"></div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
