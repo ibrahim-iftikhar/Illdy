@@ -1,2 +1,3 @@
 # Illdy
-This was my first website when I started We development. This website is made only using HTML/CSS.
+This was my first website I clonned when I started Web Development.
+This website is made only using HTML/CSS.
